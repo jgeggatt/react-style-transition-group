@@ -16,12 +16,8 @@ var React = require('react');
 
 var assign = require('react/lib/Object.assign');
 
-var ReactTransitionGroup = React.createFactory(
-  require('react/lib/ReactTransitionGroup')
-);
-var ReactStyleTransitionGroupChild = React.createFactory(
-  require('./ReactStyleTransitionGroupChild')
-);
+var ReactTransitionGroup = require('react/lib/ReactTransitionGroup');
+var ReactStyleTransitionGroupChild = require('./ReactStyleTransitionGroupChild');
 
 var ReactStyleTransitionGroup = React.createClass({
   displayName: 'ReactStyleTransitionGroup',
